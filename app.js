@@ -5,4 +5,20 @@ document.addEventListener("DOMContentLoaded", () => {
     hamburgerMenu.classList.toggle("active");
     navMenu.classList.toggle("active");
   });
+
+  //setting owl carousel
+
+  const navText = [
+    "<i class='bx bx-chevron-left'></i>",
+    "<i class='bx bx-chevron-right'></i>",
+  ];
+
+  $("#hero-carousel").owlCarousel({
+    item: 1,
+    dots: false,
+    loop: true,
+    nav: true,
+    navText: navText,
+    autoPlayHoverPause: true,
+  });
 });

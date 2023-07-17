@@ -197,9 +197,9 @@ a.movie-item:hover {
   left: 6px;
 }
 /* HERO SECTION */
-.owl-carousel {
+/* .owl-carousel {
   display: grid;
-}
+} */
 .hero-slide-item {
   padding-top: 40%;
   position: relative;
