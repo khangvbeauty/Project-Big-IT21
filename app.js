@@ -1,3 +1,7 @@
+document.querySelector("#ab").addEventListener("click", (event) => {
+  event.preventDefault();
+  location.reload();
+});
 document.addEventListener("DOMContentLoaded", () => {
   const hamburgerMenu = document.querySelector("#hamburger-menu");
   const navMenu = document.querySelector("#nav-menu");
@@ -14,11 +18,19 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   $("#hero-carousel").owlCarousel({
-    item: 1,
+    items: 1,
     dots: false,
     loop: true,
     nav: true,
     navText: navText,
+    autoPlayHoverPause: true,
+  });
+
+  $("#top-movies-slide").owlCarousel({
+    items: 6,
+    dots: false,
+    loop: true,
+    autoplay: false,
     autoPlayHoverPause: true,
   });
 });

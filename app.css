@@ -197,9 +197,6 @@ a.movie-item:hover {
   left: 6px;
 }
 /* HERO SECTION */
-/* .owl-carousel {
-  display: grid;
-} */
 .hero-slide-item {
   padding-top: 40%;
   position: relative;
@@ -271,6 +268,62 @@ a.movie-item:hover {
 }
 .item-action {
   margin-top: var(--space-top);
+}
+.carousel-nav-center {
+  position: relative;
+}
+.carousel-nav-center .owl-nav button i {
+  font-size: 3rem;
+}
+.carousel-nav-center .owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-nav-center .owl-nav .owl-prev {
+  position: absolute;
+  left: 5px;
+}
+.carousel-nav-center .owl-nav .owl-next {
+  position: absolute;
+  right: 5px;
+}
+.owl-nav button {
+  border: none;
+  outline: none;
+}
+.owl-nav button i {
+  background-color: rbga(0, 0, 0, 0.6);
+  border-radius: 50%;
+}
+.owl-nav button:hover i {
+  color: var(--main-color);
+}
+.top-down {
+  transform: translateY(-50px);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.delay-2 {
+  transition-delay: 0.2s;
+}
+.delay-4 {
+  transition-delay: 0.4s;
+}
+.delay-6 {
+  transition-delay: 0.6s;
+}
+.delay-8 {
+  transition-delay: 0.8s;
+}
+.owl-item.active .top-down {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+.item-content-wraper {
+  display: grid;
 }
 /* RESPOSIVE */
 @media only screen and (max-width: 850px) {
