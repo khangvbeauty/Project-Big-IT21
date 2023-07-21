@@ -211,7 +211,10 @@ input {
 .social-container {
   margin: 20px 0;
 }
-
+.social-container a:hover {
+  background-color: #fff;
+  color: #c0392b;
+}
 .social-container a {
   border: 1px solid #dddddd;
   border-radius: 50%;
