@@ -8,6 +8,16 @@ const scheduleSection = document.querySelector(".schedule");
 const scheduleData = [
   { name: "Chương trình A", time: "08:00 AM" },
   { name: "Chương trình B", time: "10:30 AM" },
+  { name: "Chương trình C", time: "12:00 PM" },
+  { name: "Chương trình D", time: "2:30 PM" },
+  { name: "Chương trình E", time: "4:00 PM" },
+  { name: "Chương trình F", time: "6:30 PM" },
+  { name: "Chương trình G", time: "8:00 PM" },
+  { name: "Chương trình H", time: "10:30 PM" },
+  { name: "Chương trình I", time: "12:00 AM" },
+  { name: "Chương trình J", time: "2:30 AM" },
+  { name: "Chương trình K", time: "4:00 AM" },
+  { name: "Chương trình L", time: "6:30 AM" },
   // Thêm các chương trình khác ở đây
 ];
 
