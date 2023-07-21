@@ -1,4 +1,3 @@
-<<<<<<< HEAD:app.css
 :root {
   --main-color: #c0392b;
   --body-bg: #181616;
@@ -461,7 +460,6 @@ footer .content {
     left: 0;
   }
 }
-=======
 :root {
   --main-color: #c0392b;
   --body-bg: #181616;
@@ -816,4 +814,3 @@ a.movie-item:hover {
     left: 0;
   }
 }
->>>>>>> b978698f0b31797bba76d32021e30829752ae864:main-web/app.css
