@@ -325,10 +325,118 @@ a.movie-item:hover {
 .item-content-wraper {
   display: grid;
 }
+.movie-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding-top: 140px;
+  cursor: pointer;
+}
+.movie-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  transition: transform 0.3s linear;
+}
+.movie-item:hover img {
+  transform: scale(1.2);
+}
+.movie-item-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.movie-item-content::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rbga(0, 0, 0, 0));
+}
+.movie-item-title {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  position: relative;
+  font-weight: 700;
+}
+
+/* FOOTER */
+footer.section {
+  margin-bottom: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  background-color: var(--box-bg);
+}
+footer a:hover {
+  color: var(--main-color);
+}
+footer a.logo:hover {
+  color: unset;
+}
+.social-list {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.social-item {
+  --size: 30px;
+  height: var(--size);
+  width: var(--size);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  color: var(--main-color);
+}
+.social-item:hover {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+.social-item ~ .social-item {
+  margin-left: 20px;
+}
+footer .content {
+  margin-top: 20px;
+}
+.BT {
+  font-weight: 700;
+}
+.footer-menu a {
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+.footer-menu a:hover {
+  transform: translateX(5px);
+}
 /* RESPOSIVE */
+@media only screen and (max-width: 128px) {
+  html {
+    font-size: 14px;
+  }
+  .hero-slide-item {
+    padding-top: 50%;
+  }
+  .item-content-wraper {
+    width: 50%;
+  }
+}
 @media only screen and (max-width: 850px) {
   html {
     font-size: 12px;
+  }
+  .hero-slide-item {
+    height: max-content;
+    padding-top: unset;
+  }
+  .item-content-wraper {
+    width: 100%;
+    height: 100%;
   }
   .hamburger-menu {
     display: grid;
