@@ -3,13 +3,14 @@
   --body-bg: #181616;
   --box-bg: #221f1f;
   --text-color: #ffffff;
+
   --nav-height: 60px;
   --space-top: 30px;
 }
 
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -18,10 +19,9 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Cairo", sans-serif;
   background-color: var(--body-bg);
   color: var(--text-color);
-  line-height: 1.6;
   padding-top: var(--nav-height);
 }
 
@@ -59,7 +59,7 @@ img {
   left: 0;
   width: 100%;
   z-index: 99;
-  background-color: var(--box-bg);
+  background-color: #000000;
 }
 
 .nav {
@@ -97,6 +97,12 @@ img {
 
 .nav-menu a:hover {
   color: var(--main-color);
+}
+
+.nav-menu a.btn:hover,
+a.logo:hover,
+a.movie-item:hover {
+  color: unset;
 }
 
 .btn {
@@ -191,30 +197,22 @@ img {
   left: 6px;
 }
 
-header {
-  background-color: #221f1f;
-  padding: 20px;
-  text-align: center;
-}
-
-h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #c0392b;
-  text-transform: uppercase;
-}
-
 main {
   padding: 20px;
 }
 
 .video-container {
-  max-width: 640px;
+  max-width: 942px;
   margin: 0 auto;
 }
 
 video {
   width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 section {
@@ -246,5 +244,60 @@ footer p {
 
   h2 {
     font-size: 1.5rem;
+  }
+}
+
+/* REPONSIVE 
+
+/* Default styles (for screens wider than 850px) */
+html {
+  font-size: 16px;
+}
+
+/* Custom styles for screens with a maximum width of 128px */
+@media only screen and (max-width: 128px) {
+  html {
+    font-size: 14px;
+  }
+  .hero-slide-item {
+    padding-top: 50%;
+  }
+  .item-content-wraper {
+    width: 50%;
+  }
+}
+
+/* Custom styles for screens with a maximum width of 850px */
+@media only screen and (max-width: 850px) {
+  html {
+    font-size: 12px;
+  }
+  .hero-slide-item {
+    height: max-content;
+    padding-top: unset;
+  }
+  .item-content-wraper {
+    width: 100%;
+    height: 100%;
+  }
+  .hamburger-menu {
+    display: grid;
+  }
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    background-color: #000000;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+  }
+  .nav-menu li {
+    margin: 10px 30px;
+  }
+  .nav-menu.active {
+    left: 0;
   }
 }
