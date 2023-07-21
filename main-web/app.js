@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     items: 2,
     dots: false,
     loop: true,
-    autoplay: false,
+    autoplay: true,
     autoPlayHoverPause: true,
     responsive: {
       500: {

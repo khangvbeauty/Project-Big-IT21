@@ -387,11 +387,50 @@ a.movie-item:hover {
   color: var(--text-color);
   width: 3.5rem;
   height: 3.5rem;
-  display: flex;
-  align-items: center;
+  text-align: center;
+  justify-content: center;
   border-radius: 10%;
 }
-#go {
+.pricing-header {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.pricing-box {
+  padding: 50px;
+  margin: 15px 0;
+  background-color: var(--body-bg);
+  border-top: 5px solid transparent;
+  transition: transform 0.3s ease-in-out;
+}
+.pricing-box:hover {
+  transform: translateY(-20px);
+}
+.pricing-box.hightlight {
+  border-top: 5px solid var(--main-color);
+}
+.pricing-box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.pricing-price {
+  font-weight: 700;
+}
+.pricing-price span {
+  font-size: 1rem;
+}
+.pricing-box-content {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 1.25rem;
+}
+.pricing-box-action {
+  text-align: center;
+  margin-top: 60px;
 }
 /* FOOTER */
 footer.section {
@@ -402,6 +441,10 @@ footer.section {
 }
 footer a:hover {
   color: var(--main-color);
+}
+footera.logo {
+  margin-top: -2.5rem;
+  display: block;
 }
 footer a.logo:hover {
   color: unset;
@@ -434,6 +477,19 @@ footer .content {
 .BT {
   font-weight: 700;
 }
+.row {
+  width: 100%;
+  padding-left: 100px;
+}
+.content li {
+  text-decoration: none;
+  list-style-type: none;
+  width: 250px;
+}
+.content-1 {
+  width: 100%;
+  margin-left: 100px;
+}
 .footer-menu a {
   display: inline-block;
   transition: transform 0.2s ease-in-out;
@@ -441,8 +497,15 @@ footer .content {
 .footer-menu a:hover {
   transform: translateX(5px);
 }
+.hj {
+  margin-left: 300px;
+}
+.jii {
+  margin-right: 200px;
+}
 .section {
-  padding-top: 80px;
+  padding-top: 30px;
+  width: 100%;
 }
 .section-header {
   margin-bottom: 30px;
@@ -453,6 +516,12 @@ footer .content {
   border-left: 4px solid var(--main-color);
   display: flex;
   align-items: center;
+}
+.copyright {
+  padding: 10px;
+  border-top: 1px solid --body-bg;
+  background-color: var(--box-bg);
+  text-align: center;
 }
 /* RESPOSIVE */
 @media only screen and (max-width: 128px) {
