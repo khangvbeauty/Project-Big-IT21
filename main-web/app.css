@@ -103,7 +103,7 @@ a.logo:hover,
 a.movie-item:hover {
   color: unset;
 }
-.nav-menu li {
+.nav-menu ul li {
   position: relative;
   display: inline-block;
   margin: 0;
@@ -116,10 +116,12 @@ a.movie-item:hover {
   border-radius: 5px;
 }
 .nav-menu li ul li {
-  width: 200px;
+  margin: 10px 0;
+  width: 100px;
 }
 .nav-menu li:hover ul {
   display: block;
+  z-index: 99;
 }
 .btn {
   color: #ffffff;
