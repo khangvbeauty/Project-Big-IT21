@@ -84,12 +84,11 @@ img {
   display: flex;
   align-items: center;
   padding: 0 20px;
+  padding: 0;
 }
-
 .nav-menu li ~ li {
   margin-left: 30px;
 }
-
 .nav-menu a {
   text-transform: uppercase;
   font-weight: 700;
@@ -104,7 +103,24 @@ a.logo:hover,
 a.movie-item:hover {
   color: unset;
 }
-
+.nav-menu li {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+.nav-menu li ul.demo-1 {
+  display: none;
+  position: absolute;
+  padding-left: 30px;
+  background-color: var(--body-bg);
+  border-radius: 5px;
+}
+.nav-menu li ul li {
+  width: 200px;
+}
+.nav-menu li:hover ul {
+  display: block;
+}
 .btn {
   color: #ffffff;
   padding: 0.25rem 1.5rem;
@@ -459,7 +475,6 @@ a.movie-item:hover {
   text-align: center;
   margin-top: 60px;
 }
-
 footer.section {
   margin-top: 80px;
   padding-bottom: 80px;
@@ -522,7 +537,9 @@ footer .content {
 .footer-menu a:hover {
   transform: translateX(5px);
 }
-
+.introduction {
+  padding-top: 50px;
+}
 .copyright {
   padding: 10px;
   border-top: 1px solid var(--body-bg);
