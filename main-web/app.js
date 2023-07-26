@@ -63,19 +63,3 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 });
-$(window).scroll(function () {
-  if ($("#go").scrollTop() >= 100)
-    $("#go").css({
-      position: "fixed",
-      bottom: 0,
-      right: 0,
-    });
-  $("#go").click(() => {
-    $("html, body").animate(
-      {
-        scrollTop: 0,
-      },
-      3000
-    );
-  });
-});
