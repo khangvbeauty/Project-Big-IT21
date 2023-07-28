@@ -2,6 +2,12 @@ document.querySelector("#ab").addEventListener("click", (event) => {
   event.preventDefault();
   location.reload();
 });
+setInterval(function timer() {
+  let d = new Date();
+  let c = (document.getElementById("block").innerHTML = `${d.getDate()}/0${
+    d.getMonth() + 1
+  }/${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`);
+}, 1000);
 document.addEventListener("DOMContentLoaded", () => {
   const hamburgerMenu = document.querySelector("#hamburger-menu");
   const navMenu = document.querySelector("#nav-menu");

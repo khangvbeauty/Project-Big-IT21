@@ -1,0 +1,66 @@
+body {
+  background-color: #fff;
+  border: 5px solid #000;
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+}
+#container {
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.2em #8f7;
+}
+#play {
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #1334d8;
+  font-size: 20px;
+}
+#stop {
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #1334d8;
+  font-size: 20px;
+}
+#container {
+  background-color: green;
+  width: 100%;
+  height: 500px;
+  margin-top: 10px;
+  position: relative;
+}
+#ball {
+  position: absolute;
+  width: 7%;
+  border-radius: 100%;
+}
+#fter > p {
+  color: #fff;
+  animation: move 15s infinite;
+  position: relative;
+}
+@keyframes move {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+#fter {
+  background-color: blue;
+  padding: 5px;
+}
+.copyright {
+  padding: 10px;
+  border-top: 1px solid black;
+  background-color: var(--box-bg);
+  text-align: center;
+  background-color: gray;
+}
+.copyright a {
+  text-decoration: none;
+  color: #fff;
+}
