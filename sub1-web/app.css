@@ -254,7 +254,7 @@ a.movie-item:hover {
 }
 
 .movie-slide {
-  max-height: 150px; /* Đặt chiều cao tối đa cho phần tử .movie-slide */
+  max-height: 200px; /* Đặt chiều cao tối đa cho phần tử .movie-slide */
   overflow: hidden; /* Ẩn phần nội dung vượt quá chiều cao tối đa */
 }
 
