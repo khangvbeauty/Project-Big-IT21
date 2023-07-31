@@ -309,7 +309,6 @@ a.movie-item:hover {
 .carousel-nav-center .owl-nav button i {
   font-size: 3rem;
 }
-
 .carousel-nav-center .owl-nav button {
   position: absolute;
   top: 50%;
@@ -556,14 +555,14 @@ footer .content {
 }
 /* Go top top */
 #top-up {
-  font-size: 4rem;
+  font-size: 5.5rem;
   cursor: pointer;
   position: fixed;
   bottom: 0;
   right: 0;
   z-index: 100;
-  width: 3rem;
-  height: 5rem;
+  width: 3.5rem;
+  height: 6rem;
   color: #004993;
   background: linear-gradient(0, 0, 0, 0.5rem);
 }
