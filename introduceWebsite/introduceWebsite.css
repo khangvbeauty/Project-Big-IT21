@@ -296,6 +296,15 @@ li #choice {
   background-color: var(--box-bg);
   text-align: center;
 }
+.banner .right h4 a {
+  font-size: 20px;
+}
+.banner .right h4 a:hover {
+  color: var(--main-color);
+}
+.bientap .hi h3 a:hover {
+  color: var(--main-color);
+}
 /* RESPONSIVE */
 
 @media only screen and (max-width: 1280px) {

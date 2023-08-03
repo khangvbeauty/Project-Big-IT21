@@ -105,8 +105,9 @@ a.movie-item:hover {
 }
 .nav-menu ul li {
   position: relative;
-  display: inline-block;
+  display: block;
   margin: 0;
+  text-align: center;
 }
 .nav-menu li ul.demo-1 {
   display: none;
