@@ -124,6 +124,11 @@ a.movie-item:hover {
   display: block;
   z-index: 99;
 }
+
+li #choice {
+  border-bottom: 3px solid var(--main-color);
+  color: var(--main-color);
+}
 .btn {
   color: #ffffff;
   padding: 0.25rem 1.5rem;
