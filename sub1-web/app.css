@@ -107,7 +107,6 @@ a.movie-item:hover {
   position: relative;
   display: block;
   margin: 0;
-  text-align: center;
 }
 .nav-menu li ul.demo-1 {
   display: none;
@@ -115,6 +114,7 @@ a.movie-item:hover {
   padding-left: 30px;
   background-color: var(--body-bg);
   border-radius: 5px;
+  font-size: unset;
 }
 .nav-menu li ul li {
   margin: 10px 0;
