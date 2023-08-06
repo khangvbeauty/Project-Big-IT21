@@ -480,7 +480,7 @@ a.movie-item:hover {
 }
 footer.section {
   margin-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
   position: relative;
   background-color: var(--box-bg);
 }
@@ -502,6 +502,7 @@ footer a.logo:hover {
   display: flex;
   align-items: center;
   margin-top: 20px;
+  padding-bottom: 20px;
 }
 
 .social-item {
@@ -525,7 +526,8 @@ footer a.logo:hover {
 }
 
 footer .content {
-  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .footer-menu {
@@ -540,8 +542,16 @@ footer .content {
 .footer-menu a:hover {
   transform: translateX(5px);
 }
+
+.devide {
+  width: 95%;
+  border: 0.5px solid var(--main-color);
+  margin: auto auto;
+}
 .introduction {
-  padding-top: 50px;
+  padding-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .copyright {
   padding: 10px;
