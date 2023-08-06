@@ -501,20 +501,57 @@ main {
 
 .video-container {
   max-width: 942px;
-  margin: 0 auto;
 }
 
 video {
   width: 100%;
 }
 
-nav {
+.schedule {
+  max-height: 530px; /* Đặt chiều cao tối đa của danh sách */
+  width: 350px;
+  overflow-y: auto; /* Hiển thị thanh cuộn theo chiều dọc khi danh sách dài hơn */
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.schedule h2 {
+  text-align: center;
+}
+.schedule p {
+  background-color: var(--body-bg);
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+.schedule p:nth-child(odd) {
+  background-color: var(--box-bg); /* Màu nền cho các thẻ lẻ */
+}
+
+.schedule p:nth-child(even) {
+  background-color: var(--body-bg); /* Màu nền cho các thẻ chẵn */
+}
+.schedule p:last-child {
+  margin-bottom: 0;
+}
+/* Thêm kiểu dáng cho phần bọc video và lịch phát sóng */
+.video-schedule-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng nếu không đủ chỗ */
+  align-items: flex-start; /* Canh lịch phát sóng lên trên */
+  margin-bottom: 30px;
+}
+
+/* Điều chỉnh kích thước của các phần chứa video và lịch phát sóng */
+.video-container,
+.schedule {
+  margin: 0px 10px; /* Tạo khoảng cách giữa video và lịch phát sóng */
 }
 
 section {
-  margin-top: 40px;
+  margin-top: 50px;
+  padding: 20px;
 }
 
 h2 {
