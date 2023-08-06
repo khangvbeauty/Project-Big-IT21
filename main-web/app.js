@@ -1,5 +1,4 @@
-document.querySelector("#ab").addEventListener("click", (event) => {
-  event.preventDefault();
+$("#ab").click(function () {
   location.reload();
 });
 setInterval(function timer() {
@@ -8,6 +7,7 @@ setInterval(function timer() {
     d.getMonth() + 1
   }/${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`);
 }, 1000);
+
 document.addEventListener("DOMContentLoaded", () => {
   const hamburgerMenu = document.querySelector("#hamburger-menu");
   const navMenu = document.querySelector("#nav-menu");
@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   //setting owl carousel
-
   const navText = [
     "<i class='bx bx-chevron-left'></i>",
     "<i class='bx bx-chevron-right'></i>",

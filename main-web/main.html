@@ -26,6 +26,24 @@
     <!-- APP CSS -->
     <link rel="stylesheet" href="grid.css" />
     <link rel="stylesheet" href="app.css" />
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(window).scroll(function() {
+      $('#top-up').off('click');
+      // Xử lý sự kiện nhấp chuột vào nút Scroll To Top
+      $('#top-up').click(function() {
+        $('html, body').animate({scrollTop: 0}, 1000);
+        return false;
+    });
+      // Hiển thị nút Scroll To Top khi người dùng cuộn trang xuống
+        if ($(this).scrollTop() > 800) {
+            $('#top-up').fadeIn();
+        } else {
+            $('#top-up').fadeOut();
+        }
+    });
+    </script>
   </head>
 
   <body>
@@ -42,7 +60,7 @@
           <h1 id="block">00/00/0000 00:00:00</h1>
           <ul class="nav-menu" id="nav-menu">
             <li><a href="#" id="ab">Trang Chủ</a></li>
-            <li><a href="#">Truyền Hình</a></li>
+            <li><a href="http://127.0.0.1:5501/sub1-web/sub1.html" target="_blank">Truyền Hình</a></li>
             <li>
               <a href="#">Phim</a>
               <ul class="demo-1">
@@ -67,21 +85,21 @@
                   <a href="#">Học Tập</a>
                 </li>
                 <li>
-                  <a href="#">Tin tức</a>
+                  <a href="http://127.0.0.1:5501/news-web/index.html" target="_blank">Tin tức</a>
                 </li>
                 <li>
-                  <a href="http://127.0.0.1:5500/PlayGame/animationBall.html" target="blank">Giải Trí</a>
+                  <a href="http://127.0.0.1:5501/PlayGame/animationBall.html" target="blank">Giải Trí</a>
                 </li>
                 <li>
-                  <a href="#">PodCast</a>
+                  <a href="#">PodCast</a> 
                 </li>
               </ul>
             </li>
-            <li><a href="http://127.0.0.1:5500/introduceWebsite/introduceWebsite.html#" target="_blank">Giới thiệu</a></li>
+            <li><a href="http://127.0.0.1:5501/introduceWebsite/introduceWebsite.html" target="_blank">Giới thiệu</a></li>
             <li><div id="tisearch"><input id="search" type="text" placeholder="Tìm kiếm..."></div></li>
             <li>
               <a
-                href="http://127.0.0.1:5500/signin/index.html"
+                href="http://127.0.0.1:5501/signin/index.html"
                 class="btn btn-hover"
               >
                 <span>Đăng nhập</span>
@@ -694,7 +712,7 @@
         </div>
       </div>
     </div>
-    <!-- END LASTEST MOVIE SECTION -->
+    <!-- END LASTEST MOVIE SECTION -->  
     <!-- LASTEST TV SERIES SECTION -->
     <div class="section">
       <div class="container">
@@ -1206,16 +1224,14 @@
     </div>
     <!-- END PRICING SECTION -->
     <!-- GO TO TOP -->
-    <div id="go-to-top" style="text-align:center; font-size:30px;">
-      <a href="#" title="BACK TO TOP" id="top-up">&#710</a>
+    <a href="#" title="Đi lên đầu trang" id="top-up" style="text-align: center; font-size: 80px; display: none;">&#710</a>
       <!-- &#710 là kí đặc biệt trong HTML-->
-    </div>
     <!-- END GO TO TOP -->
     <!-- FOOTER SECTION -->
     <footer class="section">
       <div class="row">
-        <div class="col-4 col-md-6 colsm-12">
-          <div class="content">
+        <div class="col-4 col-md-6 colsm-12 it">
+          <div class="content con">
             <a href="#" class="logo">
               <i class="bx bx-movie-play bx-tada main-color"></i>OU P<span
                 class="main-color"
@@ -1251,7 +1267,7 @@
             </div>
           </div>
         </div>
-            <div class="col-3 col-md-6 col-sm-12" style="margin-left: 100px">
+            <div class="col-3 col-md-6 col-sm-12 it-1">
               <div class="content">
                 <ul class="footer-menu hj jii">
                   <li><a href="#" target="_blank">OU TV</a></li>
@@ -1261,7 +1277,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-3 col-md-6 col-sm-12" style="margin-left: 100px">
+            <div class="col-3 col-md-6 col-sm-12 it-2">
               <div class="content">
                 <ul class="footer-menu hj content-1">
                   <li><a href="#" target="_blank">OU IT</a></li>
@@ -1279,14 +1295,28 @@
         </div>
       </div>
       <hr class="devide">
-      <div class="introduction">
-        <div>
+      <div class="introduction flex">
+        <div class="cti">
           <p><a>Tổng biên tập: Trần Trọng Nhân</a></p>
           <p><a>Phó tổng biên tập: Nguyễn Vĩ Khang</a></p>
-          <p><a href="#">Địa chỉ: 375 Nguyễn Kiệm, Gò Vấp, Thành phố Hồ Chí Minh</a></p>
           <p><a href="#">Tổng đài: (024) 3.8355931</a></p>
           <p><a href="#">Email: truyenhinhOU@vtv.vn</a></p>
           <p><a href="#">Liên hệ quảng cáo: 033 5607 157 - 091 4066 624</a></p>
+        </div>
+        <div class="cty">
+          <p>
+            <a href="#">Công ty Cổ phần Viễn Thông OU - Người đại diện: Ông Dương Hữu Thành.
+            Trụ sở: Tầng 5, 371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, TP HCM.</a>
+          </p>
+          <p>
+            <a href="#">Số giấy chứng nhận đăng ký kinh doanh: 0101778663 do Sở Kế Hoạch Đầu
+            Tư Thành Phố Hồ Chí Minh cấp vào ngày 02/10/2022.</a>
+          </p>
+          <p>
+            <a href="#">Giấy phép cung cấp Dịch vụ Phát thanh, Truyền hình trên mạng
+            Internet cấp lần đầu ngày 18/03/2023, cấp lại theo Giấy phép số
+            99/GP-BTTTT ngày 23/08/2023.</a>
+          </p>
         </div>
       </div>
     </footer>
@@ -1297,25 +1327,10 @@
     </div>
     <!-- END COPY RIGHT SECTION -->
     <!-- APP JS -->
-    <script> 
-    // kéo xuống khoảng cách 500px thì xuất hiện nút Top-up 
-    var offset = 800; 
-    // thời gian di trượt 5s ( 1000 = 1s ) 
-    var duration = 750; 
-    $(function(){ 
-      $(window).scroll(function () { 
-        if ($(this).scrollTop() > offset) 
-          $('#top-up').fadeIn(duration);
-        else $('#top-up').fadeOut(duration); 
-      }); 
-        $('#top-up').click(function () { 
-          $('body,html').animate({scrollTop: 0}, 5000); 
-        }); 
-      }); 
-    </script>
+    
     <!-- APP JS AND JQUERY -->
-    <script src="./app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./bonus.js"></script>
+    <script src="./app.js"></script>  
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"

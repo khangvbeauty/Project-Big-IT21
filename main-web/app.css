@@ -525,7 +525,7 @@ footer a.logo:hover {
   margin-left: 20px;
 }
 
-footer .content {
+footer .con {
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -541,6 +541,18 @@ footer .content {
 
 .footer-menu a:hover {
   transform: translateX(5px);
+  cursor: pointer;
+}
+.it {
+  width: 50%;
+}
+
+.it-1 {
+  width: 25%;
+}
+
+.it-2 {
+  width: 25%;
 }
 
 .devide {
@@ -579,6 +591,15 @@ footer .content {
 #top-up:hover {
   color: #fff;
 }
+.flex {
+  display: flex;
+}
+.cti {
+  width: 40%;
+}
+.cty {
+  width: 60%;
+}
 /* RESPONSIVE */
 
 @media only screen and (max-width: 1280px) {
@@ -594,7 +615,6 @@ footer .content {
     width: 50%;
   }
 }
-
 @media only screen and (max-width: 850px) {
   html {
     font-size: 12px;
