@@ -525,7 +525,7 @@ footer a.logo:hover {
   margin-left: 20px;
 }
 
-footer .content {
+footer .con {
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -541,6 +541,18 @@ footer .content {
 
 .footer-menu a:hover {
   transform: translateX(5px);
+  cursor: pointer;
+}
+.it {
+  width: 50%;
+}
+
+.it-1 {
+  width: 25%;
+}
+
+.it-2 {
+  width: 25%;
 }
 
 .devide {
@@ -582,8 +594,11 @@ footer .content {
 .flex {
   display: flex;
 }
+.cti {
+  width: 40%;
+}
 .cty {
-  margin-left: 30px;
+  width: 60%;
 }
 /* RESPONSIVE */
 
