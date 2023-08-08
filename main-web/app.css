@@ -586,10 +586,20 @@ footer .con {
   width: 3.5rem;
   height: 6rem;
   color: #004993;
+  color: var(--main-color);
   background: linear-gradient(0, 0, 0, 0.5rem);
 }
 #top-up:hover {
   color: #fff;
+}
+/* BLOCK */
+#block {
+  margin-top: 1rem;
+  background: var(--box-bg);
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
 }
 .flex {
   display: flex;

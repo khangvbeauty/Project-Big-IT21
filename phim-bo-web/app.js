@@ -67,4 +67,23 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
   });
+  $(".hi").owlCarousel({
+    items: 2,
+    dots: false,
+    autoWidth: true,
+    loop: true,
+    autoplay: true,
+    autoPlayHoverPause: true,
+    responsive: {
+      500: {
+        items: 3,
+      },
+      1280: {
+        items: 4,
+      },
+      1600: {
+        items: 6,
+      },
+    },
+  });
 });

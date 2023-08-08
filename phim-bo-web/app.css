@@ -124,6 +124,9 @@ a.movie-item:hover {
   display: block;
   z-index: 99;
 }
+.demo-1 #phimbo {
+  border-bottom: 3px solid var(--main-color);
+}
 .btn {
   color: #ffffff;
   padding: 0.25rem 1.5rem;
@@ -338,7 +341,41 @@ a.movie-item:hover {
 .owl-nav button:hover i {
   color: var(--main-color);
 }
+/* ------------- */
+/* kích thước của thanh điều hướng */
+.hi .owl-nav button i {
+  font-size: 3rem;
+}
+.hi .owl-nav button {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+}
+/* di chuyển thanh điều hướng trái*/
+.hi .owl-nav .owl-prev {
+  position: absolute;
+  left: 5px;
+}
+/* di chuyển thanh điều hướng phải*/
+.hi .owl-nav .owl-next {
+  position: absolute;
+  right: 5px;
+}
 
+.owl-nav button {
+  border: none;
+  outline: none;
+}
+
+.owl-nav button i {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+}
+
+.owl-nav button:hover i {
+  color: var(--main-color);
+}
+/* ----------------- */
 .top-down {
   transform: translateY(-50px);
   visibility: hidden;
@@ -367,12 +404,12 @@ a.movie-item:hover {
   visibility: visible;
   opacity: 1;
 }
-
+/* Kích thước khung chứa movie-item */
 .movie-item {
   display: block;
   position: relative;
   overflow: hidden;
-  padding-top: 140%;
+  padding-top: 70%;
   cursor: pointer;
 }
 
