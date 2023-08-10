@@ -242,6 +242,10 @@ a.movie-item:hover {
   display: flex;
 }
 
+.item-content-title.top-down {
+  font-family: serif;
+}
+
 .item-content-wraper {
   padding-left: 5rem;
   width: 40%;
