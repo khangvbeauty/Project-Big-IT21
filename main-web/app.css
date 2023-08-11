@@ -367,7 +367,7 @@ a.movie-item:hover {
   visibility: visible;
   opacity: 1;
 }
-
+/* Kích thước khung chứa movie-item */
 .movie-item {
   display: block;
   position: relative;
@@ -413,7 +413,85 @@ a.movie-item:hover {
   position: relative;
   font-weight: 700;
 }
-
+/* NEWS */
+.news {
+  display: flex;
+}
+.news a:hover {
+  color: var(--main-color);
+}
+.news #tile {
+  border-left: 5px solid var(--main-color);
+}
+.news div h2 {
+  margin-left: 10px;
+}
+.left {
+  width: 25%;
+}
+.left #tile {
+  margin-left: 18px;
+}
+.left-1 p {
+  margin-top: -5px;
+}
+.left-1 {
+  padding-bottom: 10px;
+  width: 90%;
+  margin-left: 18px;
+}
+.left-2 {
+  width: 90%;
+  margin-left: 18px;
+}
+.left-3 {
+  width: 90%;
+  margin-left: 18px;
+  margin: 10px;
+}
+.left-3 p:first-child {
+  border-top: 1px solid #fff;
+}
+.left-3 p:not(:last-child) {
+  border-bottom: 1px solid #fff;
+}
+.middle {
+  width: 50%;
+}
+.middle-content {
+  display: flex;
+  margin-bottom: 10px;
+}
+.middle-content:not(:last-child) {
+  border-bottom: 1px solid #fff;
+}
+.middle-content-1 {
+  width: 150%;
+}
+.middle-content-demo {
+  margin-left: 10px;
+}
+.middle-1 {
+  width: 98%;
+}
+.middle-1 h2 {
+  margin-top: -10px;
+}
+.right {
+  width: 25%;
+}
+.right-3 {
+  margin: 10px;
+}
+.right-3 p:first-child {
+  border-top: 1px solid #fff;
+}
+.right-3 p:not(:last-child) {
+  border-bottom: 1px solid #fff;
+}
+.right-demo {
+  width: 95%;
+}
 .section {
   padding-top: 80px;
 }
