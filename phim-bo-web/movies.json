@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Khách sạn ma quái",
+    "image": "./img/ma1.webp",
+    "rating": 9,
+    "episodes": 16,
+    "quality": "HD",
+    "age_rating": "16+"
+  },
+  {
+    "title": "Lời Nguyền Ma Lai",
+    "image": "./img/ma2.webp",
+    "rating": 8.5,
+    "episodes": 42,
+    "quality": "HD",
+    "age_rating": "16+"
+  },
+  {
+    "title": "Đường Triều Quỷ Sự Lục",
+    "image": "./img/ma3.webp",
+    "rating": 8,
+    "episodes": 36,
+    "quality": "HD",
+    "age_rating": "16+"
+  },
+  {
+    "title": "Bắt ma phá án",
+    "image": "./img/ma4.webp",
+    "rating": 9.5,
+    "episodes": 16,
+    "quality": "HD",
+    "age_rating": "16+"
+  },
+  {
+    "title": "Ma Nữ Đáng Yêu",
+    "image": "./img/ma5.webp",
+    "rating": 10,
+    "episodes": 16,
+    "quality": "HD",
+    "age_rating": "16+"
+  },
+  {
+    "title": "Ma Búp Bê (Phần 1)",
+    "image": "./img/ma6.webp",
+    "rating": 10,
+    "episodes": 8,
+    "quality": "HD",
+    "age_rating": "18+"
+  },
+  {
+    "title": "Oan Hồn Ma Nữ",
+    "image": "./img/ma7.webp",
+    "rating": 9.5,
+    "episodes": 39,
+    "quality": "HD",
+    "age_rating": "13+"
+  },
+  {
+    "title": "Đầu Quỷ",
+    "image": "./img/ma8.webp",
+    "rating": 9.5,
+    "episodes": 16,
+    "quality": "HD",
+    "age_rating": "16+"
+  },
+  {
+    "title": "Thước Vải Ma Mị",
+    "image": "./img/ma9.webp",
+    "rating": 9.5,
+    "episodes": 42,
+    "quality": "HD",
+    "age_rating": "16+"
+  },
+  {
+    "title": "Mặt Trời của Chàng Joo",
+    "image": "./img/ma10.webp",
+    "rating": 8.5,
+    "episodes": 32,
+    "quality": "HD",
+    "age_rating": "16+"
+  }
+]

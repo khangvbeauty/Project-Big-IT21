@@ -87,3 +87,50 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 });
+
+// Function to create and append HTML elements
+function createAndAppend(parent, elementType, className) {
+  const element = document.createElement(elementType);
+  element.className = className;
+  parent.appendChild(element);
+  return element;
+}
+
+// Fetch JSON data and display in HTML
+fetch("movies.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const moviesContainer = document.getElementById("movi");
+
+    let moviesHTML = "";
+
+    data.forEach((movie) => {
+      moviesHTML += `
+        <div class="movie-item" style="padding-top: 150%;">
+          <img src="${movie.image}" alt="${movie.title}" />
+          <div class="movie-item-content">
+            <div class="movie-item-title">${movie.title}</div>
+            <div class="movie-infos">
+              <div class="move-info">
+                <i class="bx bxs-star" style="color: red"></i>
+                <span>${movie.rating}</span>
+              </div>
+              <div class="move-info">
+                <i class="bx bxs-time" style="margin-left: 5px; color: red"></i>
+                <span>${movie.episodes} tập</span>
+              </div>
+              <div class="move-info">
+                <span style="margin-left: 5px">${movie.quality}</span>
+              </div>
+              <div class="move-info">
+                <span style="margin-left: 5px">${movie.age_rating}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+
+    moviesContainer.innerHTML = moviesHTML;
+  })
+  .catch((error) => console.error("Error fetching JSON:", error));
