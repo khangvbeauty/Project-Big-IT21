@@ -1,4 +1,5 @@
 function loadPricing() {
+  let d = document.getElementById("row-json");
   let h = "";
   fetch("./data/pricing-list.json")
     .then((res) => res.json())
@@ -24,8 +25,7 @@ function loadPricing() {
                 </div>
               </div>`;
       }
-      let e = document.getElementsByClassName("row");
-      e.innerHTML += h;
+      d.innerHTML += h;
     });
 }
 window.onload = function () {

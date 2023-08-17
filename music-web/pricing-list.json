@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Basic",
+    "price": "Free",
+    "device": "Số thiết bị xem đồng thời: 10",
+    "channel": "4 kênh thiết yếu và các kênh địa phương",
+    "banner": "Quảng cáo trong video",
+    "endow": "Hơn 40 kênh truyền hình"
+  },
+  {
+    "id": 2,
+    "name": "Students",
+    "price": "39.000 đ",
+    "device": "Số thiết bị xem đồng thời: 5",
+    "channel": "7 kênh thiết yếu và các kênh địa phương",
+    "banner": "Không quảng cáo trong video",
+    "endow": "Hơn 100 kênh truyền hình"
+  },
+  {
+    "id": 3,
+    "name": "Premium",
+    "price": "149.000 đ",
+    "device": "Số thiết bị xem đồng thời: 3",
+    "channel": "10 kênh thiết yếu và các kênh địa phương",
+    "banner": "Không quảng cáo trong video",
+    "endow": "Hơn 140 kênh truyền hình"
+  }
+]

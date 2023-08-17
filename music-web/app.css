@@ -114,6 +114,7 @@ a.movie-item:hover {
   padding-left: 30px;
   background-color: var(--body-bg);
   border-radius: 5px;
+  font-size: unset;
 }
 .nav-menu li ul li {
   margin: 10px 0;
@@ -122,11 +123,6 @@ a.movie-item:hover {
 .nav-menu li:hover ul {
   display: block;
   z-index: 99;
-}
-
-li #choice {
-  border-bottom: 3px solid var(--main-color);
-  color: var(--main-color);
 }
 .btn {
   color: #ffffff;
@@ -219,69 +215,6 @@ li #choice {
   transform: rotate(-45deg);
   left: 6px;
 }
-
-.carousel-nav-center {
-  position: relative;
-}
-
-.carousel-nav-center .owl-nav button i {
-  font-size: 3rem;
-}
-
-.carousel-nav-center .owl-nav button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.carousel-nav-center .owl-nav .owl-prev {
-  position: absolute;
-  left: 5px;
-}
-
-.carousel-nav-center .owl-nav .owl-next {
-  position: absolute;
-  right: 5px;
-}
-
-.owl-nav button {
-  border: none;
-  outline: none;
-}
-
-.owl-nav button i {
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 50%;
-}
-
-.owl-nav button:hover i {
-  color: var(--main-color);
-}
-
-.movie-slide {
-  max-height: 200px; /* Đặt chiều cao tối đa cho phần tử .movie-slide */
-  overflow: hidden; /* Ẩn phần nội dung vượt quá chiều cao tối đa */
-}
-
-.movie-item {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  padding-top: 140%;
-  cursor: pointer;
-}
-
-.movie-item img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: transform 0.3s linear;
-}
-
-.movie-item:hover img {
-  transform: scale(1.2);
-}
 .section {
   padding-top: 80px;
 }
@@ -296,7 +229,37 @@ li #choice {
   display: flex;
   align-items: center;
 }
-
+.music-list {
+  display: flex;
+}
+.music-left {
+  width: 15%;
+  margin-left: 0.5rem;
+}
+.music-left ul li a {
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: 200;
+}
+.music-left ul li {
+  margin-bottom: 1rem;
+}
+.music-left ul li:hover {
+  color: var(--main-color);
+}
+.music-middle {
+  width: 50%;
+  display: flex;
+  margin-left: 5rem;
+}
+.music-right {
+  width: 35%;
+  display: flex;
+  margin-left: 4rem;
+}
+.music-content {
+  display: flex;
+}
 .pricing-header {
   margin-bottom: 30px;
   text-align: center;
@@ -304,7 +267,6 @@ li #choice {
   font-weight: 700;
   text-transform: uppercase;
 }
-
 .pricing-box {
   padding: 50px;
   margin: 15px 0;
@@ -348,7 +310,7 @@ li #choice {
 }
 footer.section {
   margin-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
   position: relative;
   background-color: var(--box-bg);
 }
@@ -370,6 +332,7 @@ footer a.logo:hover {
   display: flex;
   align-items: center;
   margin-top: 20px;
+  padding-bottom: 20px;
 }
 
 .social-item {
@@ -392,8 +355,9 @@ footer a.logo:hover {
   margin-left: 20px;
 }
 
-footer .content {
-  margin-top: 20px;
+footer .con {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .footer-menu {
@@ -407,9 +371,29 @@ footer .content {
 
 .footer-menu a:hover {
   transform: translateX(5px);
+  cursor: pointer;
+}
+.it {
+  width: 50%;
+}
+
+.it-1 {
+  width: 25%;
+}
+
+.it-2 {
+  width: 25%;
+}
+
+.devide {
+  width: 95%;
+  border: 0.5px solid var(--main-color);
+  margin: auto auto;
 }
 .introduction {
-  padding-top: 50px;
+  padding-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .copyright {
   padding: 10px;
@@ -417,7 +401,45 @@ footer .content {
   background-color: var(--box-bg);
   text-align: center;
 }
-
+#search {
+  height: 30px;
+  width: 200px;
+}
+/* Go top top */
+#top-up {
+  font-size: 5.5rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  width: 3.5rem;
+  height: 6rem;
+  color: #004993;
+  color: var(--main-color);
+  background: linear-gradient(0, 0, 0, 0.5rem);
+}
+#top-up:hover {
+  color: #fff;
+}
+/* BLOCK */
+#block {
+  margin-top: 1rem;
+  background: var(--box-bg);
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.flex {
+  display: flex;
+}
+.cti {
+  width: 40%;
+}
+.cty {
+  width: 60%;
+}
 /* RESPONSIVE */
 
 @media only screen and (max-width: 1280px) {
@@ -433,7 +455,6 @@ footer .content {
     width: 50%;
   }
 }
-
 @media only screen and (max-width: 850px) {
   html {
     font-size: 12px;
@@ -492,68 +513,4 @@ footer .content {
   .nav-menu.active {
     left: 0;
   }
-}
-
-main {
-  padding: 20px;
-}
-
-.video-container {
-  max-width: 942px;
-}
-
-video {
-  width: 100%;
-}
-
-.schedule {
-  max-height: 530px; /* Đặt chiều cao tối đa của danh sách */
-  width: 350px;
-  overflow-y: auto; /* Hiển thị thanh cuộn theo chiều dọc khi danh sách dài hơn */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.schedule p {
-  background-color: var(--body-bg);
-  padding: 10px;
-  width: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 0;
-}
-.schedule p:nth-child(odd) {
-  background-color: var(--box-bg); /* Màu nền cho các thẻ lẻ */
-}
-
-.schedule p:nth-child(even) {
-  background-color: var(--body-bg); /* Màu nền cho các thẻ chẵn */
-}
-.schedule p:last-child {
-  margin-bottom: 0;
-}
-/* Thêm kiểu dáng cho phần bọc video và lịch phát sóng */
-.video-schedule-wrapper {
-  display: flex;
-  flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng nếu không đủ chỗ */
-  align-items: flex-start; /* Canh lịch phát sóng lên trên */
-  margin-bottom: 30px;
-}
-
-/* Điều chỉnh kích thước của các phần chứa video và lịch phát sóng */
-.video-container,
-.schedule {
-  margin: 0px 10px; /* Tạo khoảng cách giữa video và lịch phát sóng */
-}
-
-section {
-  margin-top: 50px;
-  padding: 20px;
-}
-
-h2 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #c0392b;
-  text-transform: uppercase;
-  margin-bottom: 20px;
 }

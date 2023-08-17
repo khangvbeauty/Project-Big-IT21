@@ -227,7 +227,7 @@ li #choice {
 }
 #introduce > h1 {
   color: var(--text-color) !important;
-  font-size: 80px;
+  font-size: 40px;
 }
 .content-big {
   display: flex;
@@ -304,6 +304,15 @@ li #choice {
 }
 .bientap .hi h3 a:hover {
   color: var(--main-color);
+}
+/* BLOCK */
+#block {
+  margin-top: 1rem;
+  background: var(--box-bg);
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 800;
 }
 /* RESPONSIVE */
 

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Âm nhạc</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOX ICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="./grid.css">
+    <!-- JQUERY -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    //di chuyển lên đầu trang
+    $(window).scroll(function() {
+      $('#top-up').off('click');
+      // Xử lý sự kiện nhấp chuột vào nút Scroll To Top
+      $('#top-up').click(function() {
+        $('html, body').animate({scrollTop: 0}, 1000);
+        return false;
+    });
+      // Hiển thị nút Scroll To Top khi người dùng cuộn trang xuống
+        if ($(this).scrollTop() > 800) {
+            $('#top-up').fadeIn();
+        } else {
+            $('#top-up').fadeOut();
+        }
+    });
+    </script>
+  </head>
+  <body>
+    <!-- NAV -->
+    <div class="nav-wrapper">
+      <div class="container">
+        <div class="nav">
+          <a href="#" class="logo">
+            <i class="bx bx-movie-play bx-tada main-color"></i>OU P<span
+              class="main-color"
+              >la</span
+            >y
+          </a>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="http://127.0.0.1:5501/main-web/main.html" id="ab">Trang Chủ</a></li>
+            <li><a href="http://127.0.0.1:5501/sub1-web/sub1.html">Truyền Hình</a></li>
+            <li>
+              <a href="#">Phim</a>
+              <ul class="demo-1">
+                <li>
+                  <a href="http://127.0.0.1:5501/phim-bo-web/main.html" id="phimbo">Phim bộ</a>
+                </li>
+                <li>
+                  <a href="#">Phim lẻ</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Xem Thêm</a>
+              <ul class="demo-1">
+                <li>
+                  <a href="#">Trực Tiếp</a>
+                </li>
+                <li>
+                  <a href="#">Âm Nhạc</a>
+                </li>
+                <li>
+                  <a href="#">Học Tập</a>
+                </li>
+                <li>
+                  <a href="http://127.0.0.1:5501/news-web/index.html">Tin tức</a>
+                </li>
+                <li>
+                  <a href="http://127.0.0.1:5501/PlayGame/animationBall.html">Giải Trí</a>
+                </li>
+                <li>
+                  <a href="#">PodCast</a> 
+                </li>
+              </ul>
+            </li>
+            <li><a href="http://127.0.0.1:5501/introduceWebsite/introduceWebsite.html">Giới thiệu</a></li>
+            <li><div id="tisearch"><input id="search" type="text" placeholder="Tìm kiếm..."></div></li>
+            <li>
+              <a
+                href="http://127.0.0.1:5501/signin/index.html"
+                class="btn btn-hover"
+              >
+                <span>Đăng nhập</span>
+              </a>
+            </li>
+          </ul>
+          <!-- MOBILE MENU TOGGLE -->
+          <div class="hamburger-menu" id="hamburger-menu">
+            <div class="hamburger"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END NAV -->
+    <!-- MUSIC SECTION -->
+    <div class="music-section">
+        <div class="music-list">
+            <div class="music-left">
+                <ul>
+                    <li></li>
+                    <li><i class="bx bx-building-house"><a href="#">Trang chủ</a></i></li>
+                    <li><i class="bx bxs-fast-forward-circle"><a href="#">Shorts</a></i></li>
+                    <li><i class="bx bx-box"><a href="#">Kênh đăng ký</a></i></li>
+                    <p style="border-bottom: 1px solid #fff; margin-bottom: 5px;"></p>
+                    <li><i class="bx bx-music"><a href="#">Thư viện</a></i></li>
+                    <li><i class="bx bx-slideshow"><a href="#">Video đã xem</a></i></li>
+                    <li><i class="bx bxs-hourglass"><a href="#">Xem sau</a></i></li>
+                    <li><i class="bx bxs-like"><a href="#">Video đã thích</a></i></li>
+                    <p style="border-bottom: 1px solid #fff;"></p>
+                </ul>
+            </div>
+            <div class="music-middle">
+                <div class="music-content">
+                    <div class="music-rap">
+                    <div style="border-left: 5px solid #c0392b;"><h1>RAP VIỆT</h1></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/xVtkkHfrqPs?si=xcvBDZ77r1UnOyRt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/n3bk2ZWyRf4?si=Ze5Wdmge3kA0cWV9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/usyZ2AX6qQM?si=RhkBLZrVesGStx6W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/Wn3Spk1_Atk?si=SS5PH_qZz9tl2-Lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                </div>
+            </div>
+            <div class="music-right">
+                <div>
+                    <div style="border-left: 5px solid #c0392b;"><h1>NHẠC VIỆT</h1></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/lkzhGTwzDjc?si=_TpmI7S2eDCJunm5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/6r7jzy1LABY?si=qo9tVBsiF5g0asAl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></iframe></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/ZzwnKmGN3kQ?si=3sjzRJrywd4_UuHh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/9T026UKcizA?si=-C6YGPCYazLvSjxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MUSIC SECTION -->
+
+    <!-- PRICING SECTION -->
+    <div class="section">
+      <div class="container">
+        <div class="pricing">
+          <div class="pricing-header">
+            Gói OU P<span class="main-color">la</span>y
+          </div>
+          <div class="pricing-list">
+            <div class="row" id="row-json">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END PRICING SECTION -->
+    <!-- GO TO TOP -->
+    <a href="#" title="Đi lên đầu trang" id="top-up" style="text-align: center; font-size: 80px; display: none;">&#710</a>
+      <!-- &#710 là kí đặc biệt trong HTML-->
+    <!-- END GO TO TOP -->
+    <!-- HOURS -->
+    <div id="block"><h1 id="hours">00/00/0000 00:00:00</h1></div>
+    <!-- END HOURS -->
+    <!-- FOOTER SECTION -->
+    <footer class="section">
+      <div class="row">
+        <div class="col-4 col-md-6 colsm-12 it">
+          <div class="content con">
+            <a href="#" class="logo">
+              <i class="bx bx-movie-play bx-tada main-color"></i>OU P<span
+                class="main-color"
+                >la</span
+              >y
+            </a>
+            <img src="img/dathongbao.png" width="30%" />
+            <p>
+              Theo dõi chúng tôi trên các phương tiện trên: 
+            </p>
+            <div class="social-list">
+              <a
+                href="https://www.facebook.com/kingttn16/"
+                target="_blank"
+                class="social-item"
+              >
+                <i class="bx bxl-facebook"></i>
+              </a>
+              <a
+                href="https://twitter.com/home"
+                target="_blank"
+                class="social-item"
+              >
+                <i class="bx bxl-twitter"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/_viz.kheng_/"
+                target="_blank"
+                class="social-item"
+              >
+                <i class="bx bxl-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+            <div class="col-3 col-md-6 col-sm-12 it-1">
+              <div class="content">
+                <ul class="footer-menu hj jii">
+                  <li><a href="#" target="_blank">OU TV</a></li>
+                  <li><a href="#" target="_blank">VTVOU</a></li>
+                  <li><a href="#" target="_blank">OU CTV</a></li>
+                  <li><a href="#" target="_blank">OU+</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12 it-2">
+              <div class="content">
+                <ul class="footer-menu hj content-1">
+                  <li><a href="#" target="_blank">OU IT</a></li>
+                  <li>
+                    <a href="#" target="_blank">OU <i>Broadcom</i></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">OU <i>Cab</i></a>
+                  </li>
+                  <li><a href="#" target="_blank">SCOU</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="devide">
+      <div class="introduction flex">
+        <div class="cti">
+          <p><a>Tổng biên tập: Trần Trọng Nhân</a></p>
+          <p><a>Phó tổng biên tập: Nguyễn Vĩ Khang</a></p>
+          <p><a href="#">Tổng đài: (024) 3.8355931</a></p>
+          <p><a href="#">Email: truyenhinhOU@vtv.vn</a></p>
+          <p><a href="#">Liên hệ quảng cáo: 033 5607 157 - 091 4066 624</a></p>
+        </div>
+        <div class="cty">
+          <p>
+            <a href="#">Công ty Cổ phần Viễn Thông OU - Người đại diện: Ông Dương Hữu Thành.
+            Trụ sở: Tầng 5, 371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, TP HCM.</a>
+          </p>
+          <p>
+            <a href="#">Số giấy chứng nhận đăng ký kinh doanh: 0101778663 do Sở Kế Hoạch Đầu
+            Tư Thành Phố Hồ Chí Minh cấp vào ngày 02/10/2022.</a>
+          </p>
+          <p>
+            <a href="#">Giấy phép cung cấp Dịch vụ Phát thanh, Truyền hình trên mạng
+            Internet cấp lần đầu ngày 18/03/2023, cấp lại theo Giấy phép số
+            99/GP-BTTTT ngày 23/08/2023.</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
+    <!-- COPY RIGHT SECTION -->
+    <div class="copyright">
+      Copy Right 2023 <a href="https://github.com/khangvbeauty/Project-Big-IT21">Tran Trong Nhan - Nguyen Vi Khang</a>
+    </div>
+    <!-- END COPY RIGHT SECTION -->
+    <!-- APP JS -->
+    <script src="./app.js"></script>
+    <script src="./bonus.js"></script>
+  </body>
+</html>

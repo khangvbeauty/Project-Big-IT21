@@ -263,6 +263,7 @@ a.movie-item:hover {
   font-size: 5rem;
   line-height: 5rem;
   font-weight: 900;
+  font-family: serif;
 }
 
 .movie-infos {

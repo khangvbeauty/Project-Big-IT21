@@ -616,6 +616,15 @@ footer .con {
   height: 30px;
   width: 200px;
 }
+/* BLOCK */
+#block {
+  margin-top: 1rem;
+  background: var(--box-bg);
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+}
 /* Go top top */
 #top-up {
   font-size: 5.5rem;

@@ -1,7 +1,7 @@
 function loadPricing() {
   let d = document.getElementById("row-json");
   let h = "";
-  fetch("./data/pricing-list.json")
+  fetch("./pricing-list.json")
     .then((res) => res.json())
     .then((data) => {
       for (let p of data) {
