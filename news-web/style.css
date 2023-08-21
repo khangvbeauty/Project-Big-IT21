@@ -247,19 +247,76 @@ footer a.logo:hover {
   text-align: center;
   font-weight: 500;
 }
+
+/* Go top top */
+#top-up {
+  font-size: 5.5rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  width: 3.5rem;
+  height: 6rem;
+  color: #004993;
+  color: var(--main-color);
+  background: linear-gradient(0, 0, 0, 0.5rem);
+}
+#top-up:hover {
+  color: #fff;
+}
 /* Responsive Styles */
 @media only screen and (max-width: 1280px) {
   html {
     font-size: 14px;
   }
-
-  /* ... (Add responsive styles as needed) ... */
 }
 
 @media only screen and (max-width: 850px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
+  }
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
   }
 
-  /* ... (Add responsive styles as needed) ... */
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .hover-link {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .logo {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .news-input {
+    width: 100%;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+
+  .cards-container {
+    justify-content: center;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .introduction {
+    padding-top: 20px;
+  }
 }
