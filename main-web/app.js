@@ -1,4 +1,4 @@
-// Reload lên đầu trang
+// Reload lên đầu trang - Hàm này sẽ tải lại trang web hiện tại
 $("#ab").click(function () {
   location.reload();
 });
@@ -30,7 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "<i class='bx bx-chevron-left'></i>",
     "<i class='bx bx-chevron-right'></i>",
   ];
-
+  //Owl Carousel là một plugin giúp xây dựng các slide show được sử dụng hàng đầu
+  //trong website bởi tính đa năng, tiện lợi của nó.
   $("#hero-carousel").owlCarousel({
     items: 1, //Số lượng mục hiển thị trên một trang
     dots: false, //tắt nút chuyển slide

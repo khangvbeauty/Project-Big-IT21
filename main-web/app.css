@@ -57,6 +57,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   z-index: 99;
   background-color: #000000;
@@ -191,7 +192,7 @@ a.movie-item:hover {
   position: absolute;
   left: 0;
 }
-
+/* hiện trên dưới thanh f12 */
 .hamburger::before {
   top: -10px;
 }
@@ -199,7 +200,7 @@ a.movie-item:hover {
 .hamburger::after {
   bottom: -10px;
 }
-
+/* ------------------------- */
 .hamburger-menu.active .hamburger {
   background-color: transparent;
 }
