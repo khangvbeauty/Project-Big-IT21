@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navMenu = document.querySelector("#nav-menu");
   //Gán một event listener cho nút "hamburger-menu" để xử lý sự kiện click.
   hamburgerMenu.addEventListener("click", () => {
-    // //Callback function được gọi khi click xảy ra.
+    //Callback function được gọi khi click xảy ra.
     hamburgerMenu.classList.toggle("active");
     //Trong callback, class "active" được thêm hoặc xóa khỏi `hamburgermenu`
     navMenu.classList.toggle("active");
