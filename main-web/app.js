@@ -1,4 +1,4 @@
-// Reload lên đầu trang
+// Reload lên đầu trang - Hàm này sẽ tải lại trang web hiện tại
 $("#ab").click(function () {
   location.reload();
 });
