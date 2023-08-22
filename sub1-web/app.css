@@ -392,6 +392,41 @@ footer a.logo:hover {
   margin-left: 20px;
 }
 
+footer .con {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.footer-menu {
+  list-style-type: none;
+}
+
+.footer-menu a {
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer-menu a:hover {
+  transform: translateX(5px);
+  cursor: pointer;
+}
+.it {
+  width: 50%;
+}
+
+.it-1 {
+  width: 25%;
+}
+
+.it-2 {
+  width: 25%;
+}
+
+.devide {
+  width: 95%;
+  border: 0.5px solid var(--main-color);
+  margin: auto auto;
+}
 footer .content {
   margin-top: 20px;
 }
@@ -556,4 +591,30 @@ h2 {
   color: #c0392b;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+.flex {
+  display: flex;
+}
+.cti {
+  width: 40%;
+}
+.cty {
+  width: 60%;
+}
+/* Go top top */
+#top-up {
+  font-size: 5.5rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  width: 3.5rem;
+  height: 6rem;
+  color: #004993;
+  color: var(--main-color);
+  background: linear-gradient(0, 0, 0, 0.5rem);
+}
+#top-up:hover {
+  color: #fff;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Giới thiệu OU Play</title>
+    <link rel="shortcut icon" type="image/png" href="./img/avt.png"/>
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -17,6 +18,25 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="./introduceWebsite.css" />
+    <link rel="stylesheet" href="./grid.css">
+    <!-- JS -->
+    <script>
+    //di chuyển lên đầu trang
+    $(window).scroll(function() {
+      $('#top-up').off('click');
+      // Xử lý sự kiện nhấp chuột vào nút Scroll To Top
+      $('#top-up').click(function() {
+        $('html, body').animate({scrollTop: 0}, 1000);
+        return false;
+    });
+      // Hiển thị nút Scroll To Top khi người dùng cuộn trang xuống
+        if ($(this).scrollTop() > 200) {
+            $('#top-up').fadeIn();
+        } else {
+            $('#top-up').fadeOut();
+        }
+    });
+    </script>
   </head>
   <body>
     <!-- NAV -->
@@ -30,13 +50,13 @@
             >y
           </a>
           <ul class="nav-menu" id="nav-menu">
-            <li><a href="http://127.0.0.1:5501/main-web/main.html" id="ab">Trang Chủ</a></li>
-            <li><a href="http://127.0.0.1:5501/sub1-web/sub1.html">Truyền Hình</a></li>
+            <li><a href="/main-web/main.html" id="ab">Trang Chủ</a></li>
+            <li><a href="/sub1-web/sub1.html">Truyền Hình</a></li>
             <li>
               <a href="#">Phim</a>
               <ul class="demo-1">
                 <li>
-                  <a href="http://127.0.0.1:5501/phim-bo-web/main.html">Phim bộ</a>
+                  <a href="/phim-bo-web/phimbo.html">Phim bộ</a>
                 </li>
                 <li>
                   <a href="#">Phim lẻ</a>
@@ -50,17 +70,17 @@
                   <a href="#">Trực Tiếp</a>
                 </li>
                 <li>
-                  <a href="#">Âm Nhạc</a>
+                  <a href="/music-web/music.html">Âm Nhạc</a>
                 </li>
                 <li>
                   <a href="#">Học Tập</a>
                 </li>
                 <li>
-                  <a href="http://127.0.0.1:5501/news-web/index.html">Tin tức</a>
+                  <a href="/news-web/news.html">Tin tức</a>
                 </li>
                 <li>
                   <a
-                    href="http://127.0.0.1:5501/PlayGame/animationBall.html"
+                    href="/PlayGame/animationBall.html"
                     >Giải Trí</a
                   >
                 </li>
@@ -69,7 +89,7 @@
                 </li>
               </ul>
             </li>
-            <li><a href="http://127.0.0.1:5501/introduceWebsite/introduceWebsite.html" id="choice">Giới thiệu</a></li>
+            <li><a href="/introduceWebsite/introduceWebsite.html" id="choice">Giới thiệu</a></li>
             <li>
               <div id="tisearch">
                 <input id="search" type="text" placeholder="Tìm kiếm..." />
@@ -77,7 +97,7 @@
             </li>
             <li>
               <a
-                href="http://127.0.0.1:5500/signin/index.html"
+                href="/signin/index.html"
                 class="btn btn-hover"
               >
                 <span>Đăng nhập</span>
@@ -215,9 +235,109 @@
     </div>
     <!-- END GIỚI THIỆU -->
     <h1 id="block">00/00/0000 00:00:00</h1>
-    <footer class="copyright">
+    <!-- FOOTER SECTION -->
+    <footer class="section">
+      <div class="row">
+        <div class="col-4 col-md-6 colsm-12 it">
+          <div class="content con">
+            <a href="#" class="logo">
+              <i class="bx bx-movie-play bx-tada main-color"></i>OU P<span
+                class="main-color"
+                >la</span
+              >y
+            </a>
+            <img src="img/dathongbao.png" width="30%" />
+            <p>
+              Theo dõi chúng tôi trên các phương tiện trên: 
+            </p>
+            <div class="social-list">
+              <a
+                href="https://www.facebook.com/kingttn16/"
+                target="_blank"
+                class="social-item"
+              >
+                <i class="bx bxl-facebook"></i>
+              </a>
+              <a
+                href="https://twitter.com/home"
+                target="_blank"
+                class="social-item"
+              >
+                <i class="bx bxl-twitter"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/_viz.kheng_/"
+                target="_blank"
+                class="social-item"
+              >
+                <i class="bx bxl-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+            <div class="col-3 col-md-6 col-sm-12 it-1">
+              <div class="content">
+                <ul class="footer-menu hj jii">
+                  <li><a href="#" target="_blank">OU TV</a></li>
+                  <li><a href="#" target="_blank">VTVOU</a></li>
+                  <li><a href="#" target="_blank">OU CTV</a></li>
+                  <li><a href="#" target="_blank">OU+</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3 col-md-6 col-sm-12 it-2">
+              <div class="content">
+                <ul class="footer-menu hj content-1">
+                  <li><a href="#" target="_blank">OU IT</a></li>
+                  <li>
+                    <a href="#" target="_blank">OU <i>Broadcom</i></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">OU <i>Cab</i></a>
+                  </li>
+                  <li><a href="#" target="_blank">SCOU</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="devide">
+      <div class="introduction flex">
+        <div class="cti">
+          <p><a>Tổng biên tập: Trần Trọng Nhân</a></p>
+          <p><a>Phó tổng biên tập: Nguyễn Vĩ Khang</a></p>
+          <p><a href="#">Tổng đài: (024) 3.8355931</a></p>
+          <p><a href="#">Email: truyenhinhOU@vtv.vn</a></p>
+          <p><a href="#">Liên hệ quảng cáo: 033 5607 157 - 091 4066 624</a></p>
+        </div>
+        <div class="cty">
+          <p>
+            <a href="#">Công ty Cổ phần Viễn Thông OU - Người đại diện: Ông Dương Hữu Thành.
+            Trụ sở: Tầng 5, 371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, TP HCM.</a>
+          </p>
+          <p>
+            <a href="#">Số giấy chứng nhận đăng ký kinh doanh: 0101778663 do Sở Kế Hoạch Đầu
+            Tư Thành Phố Hồ Chí Minh cấp vào ngày 02/10/2022.</a>
+          </p>
+          <p>
+            <a href="#">Giấy phép cung cấp Dịch vụ Phát thanh, Truyền hình trên mạng
+            Internet cấp lần đầu ngày 18/03/2023, cấp lại theo Giấy phép số
+            99/GP-BTTTT ngày 23/08/2023.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- GO TO TOP -->
+    <a href="#" title="Đi lên đầu trang" id="top-up" style="text-align: center; font-size: 80px; display: none;">&#710</a>
+      <!-- &#710 là kí đặc biệt trong HTML-->
+    <!-- END GO TO TOP -->
+    <!-- END FOOTER SECTION -->
+    <!-- COPY RIGHT SECTION -->
+    <div class="copyright">
       Copy Right 2023 <a href="https://github.com/khangvbeauty/Project-Big-IT21">Tran Trong Nhan - Nguyen Vi Khang</a>
-    </footer>
+    </div>
+    <!-- END COPY RIGHT SECTION -->
   </body>
   <script>
     setInterval(function timer() {

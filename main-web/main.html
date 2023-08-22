@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./img/avt.png"/>
     <title>Đài truyền hình</title>
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -28,23 +29,6 @@
     <link rel="stylesheet" href="app.css" />
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-    //di chuyển lên đầu trang
-    $(window).scroll(function() {
-      $('#top-up').off('click');
-      // Xử lý sự kiện nhấp chuột vào nút Scroll To Top
-      $('#top-up').click(function() {
-        $('html, body').animate({scrollTop: 0}, 1000);
-        return false;
-    });
-      // Hiển thị nút Scroll To Top khi người dùng cuộn trang xuống
-        if ($(this).scrollTop() > 800) {
-            $('#top-up').fadeIn();
-        } else {
-            $('#top-up').fadeOut();
-        }
-    });
-    </script>
   </head>
 
   <body>
@@ -65,7 +49,7 @@
               <a href="#">Phim</a>
               <ul class="demo-1">
                 <li>
-                  <a href="/phim-bo-web/main.html">Phim bộ</a>
+                  <a href="/phim-bo-web/phimbo.html">Phim bộ</a>
                 </li>
                 <li>
                   <a href="#">Phim lẻ</a>
@@ -79,7 +63,7 @@
                   <a href="#">Trực Tiếp</a>
                 </li>
                 <li>
-                  <a href="/music-web/main.html">Âm Nhạc</a>
+                  <a href="/music-web/music.html">Âm Nhạc</a>
                 </li>
                 <li>
                   <a href="#">Học Tập</a>

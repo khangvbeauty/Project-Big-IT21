@@ -210,7 +210,41 @@ footer a.logo {
 footer a.logo:hover {
   color: var(--main-color);
 }
+.footer-menu {
+  list-style-type: none;
+}
+.social-item ~ .social-item {
+  margin-left: 20px;
+}
+.footer-menu a {
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+footer .con {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.footer-menu a:hover {
+  transform: translateX(5px);
+  cursor: pointer;
+}
+.it {
+  width: 50%;
+}
 
+.it-1 {
+  width: 25%;
+}
+
+.it-2 {
+  width: 25%;
+}
+
+.devide {
+  width: 95%;
+  border: 0.5px solid var(--main-color);
+  margin: auto auto;
+}
 .social-list {
   display: flex;
   align-items: center;
@@ -264,6 +298,15 @@ footer a.logo:hover {
 }
 #top-up:hover {
   color: #fff;
+}
+.flex {
+  display: flex;
+}
+.cti {
+  width: 40%;
+}
+.cty {
+  width: 60%;
 }
 /* Responsive Styles */
 @media only screen and (max-width: 1280px) {

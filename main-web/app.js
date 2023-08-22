@@ -2,6 +2,21 @@
 $("#ab").click(function () {
   location.reload();
 });
+//di chuyển lên đầu trang
+$(window).scroll(function () {
+  $("#top-up").off("click");
+  // Xử lý sự kiện nhấp chuột vào nút Scroll To Top
+  $("#top-up").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 1000);
+    return false;
+  });
+  // Hiển thị nút Scroll To Top khi người dùng cuộn trang xuống
+  if ($(this).scrollTop() > 800) {
+    $("#top-up").fadeIn();
+  } else {
+    $("#top-up").fadeOut();
+  }
+});
 // Đồng hồ:
 setInterval(function timer() {
   let d = new Date();
