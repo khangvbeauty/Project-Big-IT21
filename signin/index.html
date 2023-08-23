@@ -17,7 +17,7 @@
     <div class="container" id="container">
       <div class="form-container sign-up-container">
         <form action="#" id="sign-up-form">
-          <h1>Create Account</h1>
+          <h1>Đăng kí</h1>
           <div class="social-container">
             <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
@@ -26,9 +26,35 @@
           <span>or use your email for registration</span>
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <i class="fa-regular fa-eye" style="color: #bbbbbb"></i>
-          <i class="fa-regular fa-eye-slash" style="color: #bbbbbb"></i>
+          <input
+            type="password"
+            class="password"
+            placeholder="Password"
+            style="position: relative"
+            oninput="handlePasswordInput(this)"
+          />
+          <i
+            class="fa-regular fa-eye toggleShowPassword"
+            onclick="changeTypePass(this)"
+            style="
+              color: #bbbbbb;
+              position: absolute;
+              right: 55px;
+              bottom: 131px;
+              display: none;
+            "
+          ></i>
+          <i
+            class="fa-regular fa-eye-slash toggleHidePassword"
+            onclick="changeTypePass(this)"
+            style="
+              color: #bbbbbb;
+              position: absolute;
+              right: 55px;
+              bottom: 131px;
+              display: none;
+            "
+          ></i>
 
           <button type="submit">
             <a href="/main-web/main.html">Đăng kí</a>
@@ -45,7 +71,37 @@
           </div>
           <span>or use your account</span>
           <input type="email" placeholder="Email" required />
-          <input type="password" placeholder="Password" required />
+          <input
+            type="password"
+            class="password"
+            placeholder="Password"
+            style="position: relative"
+            oninput="handlePasswordInput(this)"
+            placeholder="Password"
+            required
+          />
+          <i
+            class="fa-regular fa-eye toggleShowPassword"
+            onclick="changeTypePass(this)"
+            style="
+              color: #bbbbbb;
+              position: absolute;
+              right: 55px;
+              bottom: 181px;
+              display: none;
+            "
+          ></i>
+          <i
+            class="fa-regular fa-eye-slash toggleHidePassword"
+            onclick="changeTypePass(this)"
+            style="
+              color: #bbbbbb;
+              position: absolute;
+              right: 55px;
+              bottom: 181px;
+              display: none;
+            "
+          ></i>
           <a href="#">Quên mật khẩu?</a>
           <button type="submit">
             <a href="/main-web/main.html">Đăng nhập</a>
