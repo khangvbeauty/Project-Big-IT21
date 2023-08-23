@@ -2,6 +2,7 @@
 $("#ab").click(function () {
   location.reload();
 });
+
 //di chuyển lên đầu trang
 $(window).scroll(function () {
   $("#top-up").off("click");
@@ -10,6 +11,7 @@ $(window).scroll(function () {
     $("html, body").animate({ scrollTop: 0 }, 1000);
     return false;
   });
+
   // Hiển thị nút Scroll To Top khi người dùng cuộn trang xuống
   if ($(this).scrollTop() > 800) {
     $("#top-up").fadeIn();
@@ -17,6 +19,7 @@ $(window).scroll(function () {
     $("#top-up").fadeOut();
   }
 });
+
 // Đồng hồ:
 setInterval(function timer() {
   let d = new Date();
@@ -24,6 +27,7 @@ setInterval(function timer() {
     d.getMonth() + 1
   }/${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`);
 }, 1000);
+
 //Lắng nghe sự kiện hoàn thành load trang thì các sự kiện khác bên trong sẽ load:
 //callback function:
 document.addEventListener("DOMContentLoaded", () => {
@@ -78,6 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
   });
+
   $(".movie-slide").owlCarousel({
     items: 2, //Số lượng mục hiển thị trên một trang
     dots: false, //tắt nút chuyển slide

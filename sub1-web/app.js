@@ -109,3 +109,7 @@ channelData.forEach((channel) => {
   channelElement.href = channel.url;
   channelsSection.appendChild(channelElement);
 });
+// Reload lên đầu trang - Hàm này sẽ tải lại trang web hiện tại
+$("#ab").click(function () {
+  location.reload();
+});

@@ -639,7 +639,8 @@ footer .con {
   background: linear-gradient(0, 0, 0, 0.5rem);
 }
 #top-up:hover {
-  color: #fff;
+  color: #fff !important;
+  transform: scale(1.5);
 }
 .flex {
   display: flex;
