@@ -321,6 +321,14 @@ html {
     font-size: 3rem;
   }
 
+  .video-container {
+    max-width: 100px;
+    margin: 0 auto;
+  }
+
+  video {
+    width: 50%;
+  }
   .hamburger-menu {
     display: grid;
   }

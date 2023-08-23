@@ -455,6 +455,7 @@ footer .con {
     width: 50%;
   }
 }
+
 @media only screen and (max-width: 850px) {
   html {
     font-size: 12px;
